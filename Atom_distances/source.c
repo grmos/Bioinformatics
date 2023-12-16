@@ -35,7 +35,7 @@ struct KeyValuePair {
     char key[4];
     int value;
 };
-struct KeyValuePair include[1502];
+struct KeyValuePair *include;
 
 KDNode *BuildKDTree(struct Pset ,int level);
 int compare_x(const void* a, const void* b);
@@ -64,7 +64,7 @@ int main()
 	struct Pset pts;
 	pts.size=data_size;
 	pts.atoms = (struct atom*)malloc(pts.size * sizeof(struct atom));
-	
+	include = (struct KeyValuePair *)malloc(data_size * sizeof(struct KeyValuePair));
 	while(!feof(fp)){
 		if(ch=='\n' && fscanf(fp,"ATOM %d %s %s %*s %d %f %f %f ",&pts.atoms[i].id,&pts.atoms[i].type,&pts.atoms[i].name,&pts.atoms[i].naa,&pts.atoms[i].x,&pts.atoms[i].y,&pts.atoms[i].z)){
             include[i].value=0;
@@ -123,7 +123,7 @@ int main()
 		    
 		printf("Execution time: %f seconds\n", cpu_time_used);
 	}
-    
+    free(include);
     return 0;
 }
 
