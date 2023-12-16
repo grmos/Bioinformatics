@@ -14,3 +14,8 @@ This C program is designed for bioinformatics applications, specifically to anal
 
 - **Output Results:** The results of the search are presented, including information about the atoms that satisfy the distance criterion.
 
+## Download Example PDB Files
+
+You can download example PDB files from the following sources:
+
+- [Protein Data Bank (PDB)](https://www.rcsb.org/)
