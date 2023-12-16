@@ -2,7 +2,7 @@
 
 ## Overview
 
-This C program is designed for bioinformatics applications, specifically to analyze Protein Data Bank (PDB) files. The tool searches for atoms in a protein that are within a specified distance threshold from a given CA (alpha carbon) atom.
+This C program is designed for bioinformatics applications, specifically to analyze Protein Data Bank (PDB) files. The tool searches for atoms in a protein that are within a specified distance threshold from a given CA (alpha carbon) atom. The implementation of the search algorithm utilizes KD-trees for efficient spatial searching.
 
 ## Features
 
