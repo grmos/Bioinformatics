@@ -49,8 +49,8 @@ KDNode *bruteForceSearch(KDNode *root , int target) ;
 
 int main()
 {
-	char filename[30];
-	printf("Enter the filename: ");
+    char filename[30];
+    printf("Enter the filename: ");
     scanf("%s", filename); //1hfr.pdb
     FILE *fp=fopen(filename, "r"); 
     int data_size,aa1,aa2;
@@ -85,7 +85,7 @@ int main()
     while(1){
 		printf("Enter the number of  amino acid  (or -1 to quit): ");
 		scanf("%d",&a_1);
-		while(a_1>186) {
+		while(a_1>max_naa) {
 		    printf("Enter an aminoacid id between 1 and %d, or else -1 to quit\n",max_naa);
 			scanf("%d",&a_1);
 		}
