@@ -44,7 +44,6 @@ int compare_z(const void* a, const void* b);
 float distanceSquare(struct atom,struct atom);
 void search_InSphere(const struct Sphere sphere, const KDNode *root, struct Pset pts, int *i);
 float distance(struct atom a1,struct atom a2);
-struct Sphere search(const KDNode *root, float *theresshold, int *naa);
 KDNode *bruteForceSearch(KDNode *root , int target) ;
 
 int main()
