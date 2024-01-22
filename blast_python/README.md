@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides Python scripts for extracting protein sequences from a text file containing protein names. The main functionality involves querying the Uniprot database using the `requests` library, creating a FASTA file with protein sequences, building a BLAST database using the NCBI BLAST tools, and performing a grid search with BLASTP.
+This project provides scripts for extracting protein sequences from a text file, creating a FASTA file, building a BLAST database, and performing a grid search using BLASTP. The scripts utilize the Uniprot database for protein information and the NCBI BLAST tools for sequence analysis.
 
 ### Prerequisites
 
