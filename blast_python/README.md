@@ -33,15 +33,8 @@ ncbi-blast-2.15.0+\bin>`makeblastdb -in ../proteins.fasta -dbtype prot -out ../d
 
 Execute the following command to perform a grid search with BLASTP:
 
-`python grid_search.py -qf ../Q13148.fasta -df database/databasename -of ../results/ -bf ../ncbi-blast-2.15.0+/bin/blastp -e 1.5`
+`python grid_search.py -qf ../<your_query_protein>.fasta -df database/<databasename> -of ../results/ -bf ../ncbi-blast-2.15.0+/bin/blastp -e 1.5`
 
 **Adjust the paths and parameters according to your specific setup.**
 
-### Acknowledgments
 
-- NCBI BLAST: [https://blast.ncbi.nlm.nih.gov/](https://blast.ncbi.nlm.nih.gov/)
-- Uniprot: [https://www.uniprot.org/](https://www.uniprot.org/)
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
