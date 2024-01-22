@@ -8,13 +8,10 @@ This project provides scripts for extracting protein sequences from a text file,
 
 Before running the scripts, make sure to install the required dependencies:
 
+# Enviroment
 - Python 3.x
-- `requests` library
-- `tqdm` library
+- Install libraries: `pip3 install -r requirements.txt`
 - NCBI BLAST (version 2.15.0+)
-
-```bash
-pip install requests tqdm
 
 Download and install NCBI BLAST from [https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
