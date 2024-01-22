@@ -21,22 +21,19 @@ Download and install NCBI BLAST from [https://blast.ncbi.nlm.nih.gov/Blast.cgi?C
 
 Run the following command to generate a FASTA file from a text file containing protein names:
 
-```bash
-python Data_generator.py -rf ../proteins.txt -wf ../proteins.fasta```
+`python Data_generator.py -rf ../proteins.txt -wf ../proteins.fasta`
 
 ### Step 2: Create the BLAST Database
 
 Run the following command to create a BLAST database from the generated FASTA file:
 
-```bash
-makeblastdb -in ../proteins.fasta -dbtype prot -out ../database
+`makeblastdb -in ../proteins.fasta -dbtype prot -out ../database`
 
 ### Step 3: Run Grid Search using BLASTP
 
 Execute the following command to perform a grid search with BLASTP:
 
-```bash
-python grid_search.py -qf ../Q13148.fasta -df database/databasename -of ../results/ -bf ../ncbi-blast-2.15.0+/bin/blastp -e 1.5
+`python grid_search.py -qf ../Q13148.fasta -df database/databasename -of ../results/ -bf ../ncbi-blast-2.15.0+/bin/blastp -e 1.5`
 
 **Adjust the paths and parameters according to your specific setup.**
 
