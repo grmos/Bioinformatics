@@ -22,7 +22,7 @@ Download and install NCBI BLAST from [https://blast.ncbi.nlm.nih.gov/Blast.cgi?C
 Run the following command to generate a FASTA file from a text file containing protein names:
 
 ```bash
-python Data_generator.py -rf ../proteins.txt -wf ../proteins.fasta
+python Data_generator.py -rf ../proteins.txt -wf ../proteins.fasta```
 
 ### Step 2: Create the BLAST Database
 
