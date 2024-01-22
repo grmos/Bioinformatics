@@ -8,7 +8,7 @@ This project provides scripts for extracting protein sequences from a text file,
 
 Before running the scripts, make sure to install the required dependencies:
 
-# Enviroment
+## Enviroment
 - Python 3.x
 - Install libraries: `pip3 install -r requirements.txt`
 - NCBI BLAST (version 2.15.0+)
