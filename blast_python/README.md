@@ -27,7 +27,7 @@ Run the following command to generate a FASTA file from a text file containing p
 
 Run the following command to create a BLAST database from the generated FASTA file:
 
-`makeblastdb -in ../proteins.fasta -dbtype prot -out ../database`
+`ncbi-blast-2.15.0+\bin>makeblastdb -in ../proteins.fasta -dbtype prot -out ../database`
 
 ### Step 3: Run Grid Search using BLASTP
 
